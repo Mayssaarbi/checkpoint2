@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Courses</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="res/gmc.jpg">
+
+</head>
+
+<body>
+
+    <img class="logo" src="res/logo.png">
+
+    <ul>
+        <li> <a href="index.html">Home</a></li>
+
+        <li> <a href="courses.html">Courses</a></li>
+        <li><a href="contact.html">Contact</a></li>
+
+    </ul>
+
+    <center>
+        <div class="rel">
+            <h1>Courses</h1>
+        </div>
+        <img class="small" src="res/course1.png">
+        <img class="small" src="res/course2.png">
+        <img class="small" src="res/course3.png">
+        <br>
+        <img class="small" src="res/course4.png">
+        <img class="small" src="res/course5.png">
+        <img class="small" src="res/course6.png">
+        <br>
+        <img class="small" src="res/course7.png">
+        <img class="small" src="res/course8.png">
+        <img class="small" src="res/course9.png">
+        <h5>Feedback</h5>
+
+        <button onclick="bold()">B</button>
+        <button onclick="italic()">I</button>
+        <button onclick="underline()">Underline</button>
+
+        <select class="form-control" onchange="changesize(this.value);">
+            <option value="20px">20px</option>
+            <option value="30px">30px</option>
+            <option value="40px">40px</option>
+        </select>
+        <select class="fontfamily-control" onchange="changefamily(this.value);">
+            <option value="Verdana">Verdana</option>
+            <option value="Arial">Arial</option>
+            <option value="Geneva">Geneva</option>
+        </select>
+        <br>
+        <textarea style="font-weight: normal;font-style: normal; text-decoration: none" id="text"></textarea>
+        </div>
+    </center>
+</body>
+<script src="main.js"></script>
+
+</html>
