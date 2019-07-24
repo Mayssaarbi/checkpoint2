@@ -1,27 +1,65 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Home</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="icon" href="res/gmc.jpg">
-    </head>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="res/gmc.jpg">
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+</head>
+
 <body>
     <img class="logo" src="res/logo.png">
     <ul>
-     <li> <a href="index.html">Home</a></li>
+        <li> <a href="index.html">Home</a></li>
 
-     <li> <a href="courses.html">Courses</a></li> 
-     <li><a href="contact.html">Contact</a></li>
-     
+        <li> <a href="courses.html">Courses</a></li>
+        <li><a href="contact.html">Contact</a></li>
+
     </ul>
-    <img id="img1" src="res/gmc1.png"> 
+    <img id="img1" src="res/gmc1.png">
+
+    <h4>Courses</h4>
+    <div class="threeimages">
+        <div class="imgbutton">
+            <img class="img2 animated" src="res/course1.png" alt=course1>
+            <button class="btn">
+                View more
+            </button>
+        </div>
+        <div class="imgbutton">
+            <img class="img2 animated" src="res/course2.png" alt=course2>
+            <button class="btn">
+                View more
+            </button>
+        </div>
+        <div class="imgbutton">
+            <img class="img2 animated" src="res/course3.png">
+            <button  class="btn">
+                View more
+            </button>
+        </div>
+              <!--  <p><a href="#ex1" rel="modal:open">Open Modal</a></p> -->
+
+    </div>
+
     <br>
- <h4>Courses</h4>
- <a href="course1.html"><img id ="i" class="img2" src="res/course1.png" alt=course1></a>
- <a href="course2.html"><img class="img2" src="res/course2.png" alt=course2></a>
- <a href="course3.html"><img class="img2" src="res/course3.png" >  </a>
- <br>
- <a class="more" href="viewmore.com">view more</a>
- <hr>
- <iframe width="560" height="315" src="https://www.youtube.com/embed/h0ZzN1YAo-8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></body>
+    <a class="more" href="viewmore.com">view more</a>
+    <hr>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/h0ZzN1YAo-8" frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <!--MODAL-->
+        <div id="ex1" class="modal">
+          <i class='far fa-window-close' style='font-size:24px;padding-left:100%;padding-top: 0px'></i>
+                <p class="rq">This is GoMyCode Track.<br> Each track has its own goal. <br> By adopting this track, you chose your own
+                    goal</p>
+                  <!--   <i class="fa-window-close"></i> --> 
+        </div>
+      
+</body>
+<script src="main.js"></script>
+
 </html>

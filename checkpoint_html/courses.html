@@ -1,60 +1,103 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Courses</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="res/gmc.jpg">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+
+
 
 </head>
+
 <body>
-      
- <img class="logo" src="res/logo.png">
 
-  <ul>
-      <li> <a href="index.html">Home</a></li>
-           
-       <li> <a href="courses.html">Courses</a></li> 
-     <li><a href="contact.html">Contact</a></li>
-              
-      </ul>
-  
+    <img class="logo" src="res/logo.png">
+
+    <ul>
+        <li> <a href="index.html">Home</a></li>
+
+        <li> <a href="courses.html">Courses</a></li>
+        <li><a href="contact.html">Contact</a></li>
+
+    </ul>
+
     <center>
-    <div class="rel"> 
-         <h1>Courses</h1>
-    </div>
-<img class="small" src="res/course1.png">
-<img class="small" src="res/course2.png">
-<img class="small" src="res/course3.png">
-<br>
-<img class="small" src="res/course4.png">
-<img class="small" src="res/course5.png">
-<img class="small" src="res/course6.png">
-<br>
-<img class="small" src="res/course7.png">
-<img class="small" src="res/course8.png">
-<img class="small" src="res/course9.png">
-<h5>Feedback</h5>
+        <div class="rel">
+            <h1>Courses</h1>
+        </div>
+        <div class="nineimages">
+            <div class="imgbtn">
+                <img class="small animated2" src="res/course1.png">
+                <button class="btn2"> View more </button>
+            </div>
+            <div class="imgbtn">
+                <img class="small" src="res/course2.png">
+                <button class="btn2"> View more </button>
+            </div>
+            <div class="imgbtn">
+                <img class="small" src="res/course3.png">
+                <br>
+                <button class="btn2"> View more </button>
+            </div>
+            <div class="imgbtn">
+                <img class="small" src="res/course4.png">
+                <button class="btn2"> View more </button>
 
-<button>B</button>
-<button>I</button>
-<button>Underline</button>
-<select>
-<option>20px</option>
-<option>30px</option>
-<option>40px</option>
-</select>
-<select>
-    <option>Verdana</option>
-    <option>Arial</option>
-    <option >Geneva</option>
-</select>
-<br>
-<textarea ></textarea>
-</div>
-</center>
+            </div>
+            <div class="imgbtn">
+                <img class="small" src="res/course5.png">
+                <button class="btn2"> View more </button>
+            </div>
+            <div class="imgbtn">
 
+                <img class="small" src="res/course6.png">
+                <button class="btn2"> View more </button>
+                <br>
+            </div>
+            <div class="imgbtn">
+                <img class="small" src="res/course7.png">
+                <button class="btn2"> View more </button>
+            </div>
+            <div class="imgbtn">
+                <img class="small" src="res/course8.png">
+                <button class="btn2"> View more </button>
+            </div>
+            <div class="imgbtn">
+                <img class="small" src="res/course9.png">
+                <button class="btn2"> View more </button>
+            </div>
+        </div>
+         <!--MODAL-->
+         <div id="ex1" class="modal">
+                <i class='far fa-window-close' style='font-size:24px;padding-left:100%;padding-top: 0px'></i>
+                      <p class="rq">This is GoMyCode Track.<br> Each track has its own goal. <br> By adopting this track, you chose your own
+                          goal</p>
+                         <!-- <i class="fa-window-close"></i>  --> 
+              </div>
+        <h5>Feedback</h5>
 
+        <button onclick="bold()">B</button>
+        <button onclick="italic()">I</button>
+        <button onclick="underline()">Underline</button>
 
-
+        <select class="form-control" onchange="changesize(this.value);">
+            <option value="20px">20px</option>
+            <option value="30px">30px</option>
+            <option value="40px">40px</option>
+        </select>
+        <select class="fontfamily-control" onchange="changefamily(this.value);">
+            <option value="Verdana">Verdana</option>
+            <option value="Arial">Arial</option>
+            <option value="Geneva">Geneva</option>
+        </select>
+        <br>
+        <textarea style="font-weight: normal;font-style: normal; text-decoration: none" id="text"></textarea>
+        </div>
+    </center>
 </body>
+<script src="main.js"></script>
+
 </html>
